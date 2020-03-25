@@ -20,7 +20,7 @@ public class LibraryTest {
 
     @Test
     public void addBookToLibrary(){
-        library.addBook(book);
+        library.addBookIfSpace(book);
         assertEquals(1, library.bookCount());
     }
 }

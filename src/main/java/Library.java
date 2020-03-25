@@ -14,11 +14,7 @@ public class Library {
         return this.library.size();
     }
 
-    public void addBook(Book book){
-        this.library.add(book);
-    }
-
-    public void checkForSpace(Book book){
+    public void addBookIfSpace(Book book){
         if(hasSpace()){
             this.library.add(book);
         }
